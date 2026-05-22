@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width , initial-scale=1.0">
+		<title>My todo list</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Liste des tâches</h1>
+			<div class="add-task">
+				<input type="text" id="taskInput" placeholder="écrire votre liste">
+				<button type="button" id="addBtn">Ajouter</button>
+			</div>
+			<div class="filtre">
+				<button class="active" type="button" id="allTask">Tout</button>
+				<button type="button" id="enCours">En cours</button>
+				<button type="button" id="doneTask">Terminées</button>
+			</div>
+			<ul id="taskList">
+			</ul>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

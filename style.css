@@ -1,0 +1,81 @@
+*{
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial;
+}
+body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #d1d5db;
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	/*background: linear-gradient(135deg, #00c6fb, #005bea);*/
+	padding: 20px;
+	border-radius: 10px;
+	width: 300px;
+	background-color: white;
+}
+#taskList li{
+	list-style-type: none;
+	margin-left: 5px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 10px;
+	border-left: 3px solid black;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	padding-left: 3px;
+	box-shadow: 0px 0px 5px rgba(3,3,3,0.3);
+}
+#taskList span:first-child{
+	flex: 1;
+	word-break: break-word;	
+}
+#taskList span:nth-child(2){
+	font-size: 12px;
+	color: rgba(0,0,0,0.7);
+}
+li button{
+	background-color: red;
+	color: white;
+	font-weight: bold;
+	width: 30px;
+	height: 30px;
+	flex-shrink: 0;
+}
+.filtre, .add-task{
+	display: flex;
+	justify-content: space-between;
+}
+button, input {
+	padding: 5px;
+	border-radius: 5px;
+}
+#allTask, #enCours, #doneTask {
+	transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+#allTask:hover, #enCours:hover, #doneTask:hover {
+	transform: scale(1.15);
+}
+/*plutôt à géger avec JS 
+
+#allTask:active, #enCours:active, #doneTask:active {
+	background-color: gold;
+}
+
+*/
+.done {
+	text-decoration: line-through;
+	color: rgb(180, 180, 180);
+}
+.active {
+	background-color: gold;
+}
